@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
     <header>
         <div class="container">
             <nav>
-                <h1>Your Name</h1>
+                <h1 class="neon-text">Your Name</h1>
                 <ul>
-                    <li><a href="#showcase">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#showcase" class="neon-text">Home</a></li>
+                    <li><a href="#about" class="neon-text">About</a></li>
+                    <li><a href="#projects" class="neon-text">Projects</a></li>
+                    <li><a href="#contact" class="neon-text">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,34 +26,34 @@
 
     <section id="showcase">
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate developer creating amazing web experiences</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <h1 class="neon-text" id="typewriter"></h1>
+            <p class="neon-text-subtle" data-aos="fade-up" data-aos-delay="1000">I'm a passionate developer creating amazing web experiences</p>
+            <a href="#projects" class="btn neon-btn" data-aos="fade-up" data-aos-delay="1500">View My Work</a>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nunc in quam ultricies, a aliquam nunc tincidunt. Donec auctor, nunc id lacinia ultricies, nunc nunc aliquet nunc, nec aliquam nunc nunc nec nunc.</p>
+            <h2 class="section-title neon-text" data-aos="fade-down">About Me</h2>
+            <p class="neon-text-subtle" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nunc in quam ultricies, a aliquam nunc tincidunt. Donec auctor, nunc id lacinia ultricies, nunc nunc aliquet nunc, nec aliquam nunc nunc nec nunc.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title neon-text" data-aos="fade-down">My Projects</h2>
             <div class="grid">
-                <div class="card">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1</p>
+                <div class="card" data-aos="flip-left">
+                    <h3 class="neon-text">Project 1</h3>
+                    <p class="neon-text-subtle">Description of project 1</p>
                 </div>
-                <div class="card">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2</p>
+                <div class="card" data-aos="flip-left" data-aos-delay="200">
+                    <h3 class="neon-text">Project 2</h3>
+                    <p class="neon-text-subtle">Description of project 2</p>
                 </div>
-                <div class="card">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3</p>
+                <div class="card" data-aos="flip-left" data-aos-delay="400">
+                    <h3 class="neon-text">Project 3</h3>
+                    <p class="neon-text-subtle">Description of project 3</p>
                 </div>
             </div>
         </div>
@@ -58,27 +61,19 @@
 
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <h2 class="section-title neon-text" data-aos="fade-down">Contact Me</h2>
+            <p class="neon-text-subtle" data-aos="fade-up">Email: your.email@example.com</p>
+            <p class="neon-text-subtle" data-aos="fade-up" data-aos-delay="200">Phone: (123) 456-7890</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p class="neon-text-subtle">&copy; 2023 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
